@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Login.css">
+    <style>
+    	.submit{
+    		border: none;
+    		padding: 10px;
+    		border-radius: 10px;
+    		margin: auto;
+    		background-color: #f94fb8;
+    		color: #FFFFFF;
+    	}
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <header class="img" style="background-image: url('img/7311634\ \(3\).jpg');">
+    <div class="container">
+        <div class="form-image">
+            <img src="img/Foto fundo Cadastro-PhotoRoom (1).png" alt="">
+        </div>
+        <div class="form">
+            <form method="post" action="respostaLogin.jsp">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="register-button">
+                        <button><a href="Formulário.html">Voltar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+		        <div class="back-button">
+		            <input class="submit" type="submit" value="Login">
+		        </div>
+            </form>
+        </div>
+    </div>
+    </header>
+</body>
+
+</html>
