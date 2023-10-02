@@ -1,0 +1,74 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+
+}
+h2{
+    text-indent: 50px;
+}
+.marca{
+    width: 100%;
+    background-color: #FFBDAA; 
+    padding-top: 50px;
+    height: auto;
+}
+.banner{
+    
+}
+.header-img{
+    width: 100%;
+}
+nav{
+    padding-bottom: 20px;
+}
+nav > a{
+    text-decoration: none;
+    color: #CC2C2C;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px;
+}
+nav > a:hover{
+    color: #FFBDAA;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 98vw;
+    height: 700px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: #FEEADF;
+    width: 30%;
+    padding: 25px 45px;
+    border-radius: 30px;
+}
+.content{
+   
+}
+.titulo{
+
+}
+.preco{
+    color: #CC2C2C;
+}
+.favorito{
+    padding: 7px;
+    border-radius: 50%;
+}
+.favorito:hover{
+    background-color: #FFBDAA;
+    cursor: pointer;
+}

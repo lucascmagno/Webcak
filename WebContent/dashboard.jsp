@@ -10,92 +10,94 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-	@charset "utf-8";
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
+    header {
+        background-color: #ff69b4;
+        color: white;
+        padding: 10px 0;
+    }
 
-:root{
-    --rosa: #FEEADF;
-}
+    menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-}
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 12px;
+    }
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
-header{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    background-color: var(--rosa);
-    height: 90px;
-}
-menu{
-    position: sticky;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-ul{
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-}
-li{
-    font-size: 1.8em;
-    color: #000000;
-}
-li > a{
-    text-decoration: none;
-    color: #000000;
-}
-li > a:hover{
-    color: #d6c9c3
-}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 
-table{
-    margin: auto;
-    border-collapse: collapse;
-    width: 70vw;
-    border-radius: 30px;
-}
-th,tr,td{
-    text-align: center;
-    padding: 10px;
-    background-color: #feeadf3b;
-    border-radius: 30px;
-}
-th:hover, tr:hover, td:hover{
-	background-color: #FEEADF;
-	cursor: pointer;
-}
+    li {
+        margin-right: 20px;
+    }
 
-thead{
-    background-color: #FEEADF;
-}
+    section {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-section{
-    padding-top: 140px;
-}
-td> a > img{
-	width: 30px;
-	height: 30px;
-}
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ff69b4;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #ff69b4;
+        color: white;
+    }
+
+    p {
+        color: #ff69b4;
+        text-align: center;
+    }
+
+    a img {
+        width: 20px;
+        height: 20px;
+    }
 </style>
+
 </head>
 <body>
 	<header>
         <menu>
+        <a style="margin-left: 12px;" href="./painelVendas.jsp">Início</a>
             <ul>
                 <li><a href="./bolo/cadastroBolo.jsp">Cadastrar Bolo</a></li>
-                <li><a href="#">Cardapio</a></li>
-                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="venda/vendasAll.jsp">Todas as Vendas</a></li>
+                <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B5591983102819&text&type=phone_number&app_absent=0">Fale Conosco</a></li>
             </ul>
+            
         </menu>
+        
     </header>
 	
     <section>

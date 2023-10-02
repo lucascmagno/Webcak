@@ -6,12 +6,14 @@
     pageEncoding="UTF-8"%>
 <% 
 
-String email = request.getParameter("email");
+String usuario = request.getParameter("usuario");
 String senha = request.getParameter("password");
 
 LoginDao loginDao = new LoginDao();
-LoginCadastro login = loginDao.login(email, senha);
+LoginCadastro login = loginDao.login(usuario, senha);
 
+HttpSession sessao = request.getSession(true);
+sessao.setAttribute("nomeUsuario", usuario);
 
 %>
 
@@ -26,7 +28,7 @@ LoginCadastro login = loginDao.login(email, senha);
     <%-- Cria uma instância do LoginDao --%>
     <%
        if (login != null) {
-           response.sendRedirect("dashboard.jsp");
+           response.sendRedirect("painelVendas.jsp");
            %>
            <script>alert("Deu certo!!!")</script>
            
