@@ -2,11 +2,11 @@ package dao;
 
 import java.sql.ResultSet;
 
+
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Movies.model.Favorito;
 import model.Venda;
 import util.Conexao;
 
