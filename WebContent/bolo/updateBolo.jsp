@@ -155,9 +155,10 @@ input[type="number"] {
         
         if (bolo != null) {
     %>
-    <form action="resposta_cadastro.jsp" method="POST">
+    <form action="respostaUpdate.jsp" method="POST">
         <div class="caixa">
             <div class="form-group">
+            	<input type="hidden" name="id" value="<%=bolo.getId() %>">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required value="<%= bolo.getNome()%>">
             </div>
